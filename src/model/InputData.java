@@ -3,6 +3,7 @@ package model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.util.Map;
 
 public class InputData {
 
@@ -17,6 +18,36 @@ public class InputData {
     private RateType rateType = RateType.CONSTANT;
 
     private BigDecimal bankMarginPercent = new BigDecimal("1.9");
+
+    private Map<Integer, BigDecimal> overpaymentSchema = Map.of(
+            5, BigDecimal.valueOf(10000),
+            6, BigDecimal.valueOf(10000),
+            7, BigDecimal.valueOf(10000),
+            8, BigDecimal.valueOf(10000)
+    );
+
+    private String overpaymentReduceWay = Overpayment.REDUCE_PERIOD;
+
+    private BigDecimal overpaymentProvisionPercent = BigDecimal.valueOf(3);
+
+    private BigDecimal overpaymentProvisionMonths = BigDecimal.valueOf(36);
+
+    public InputData witchOverpaymentSchema(Map<Integer, BigDecimal> overpaymentSchema) {
+        this.overpaymentSchema = overpaymentSchema;
+        return this;
+    }
+    public InputData witchOverpaymentReduceWay(String overpaymentReduceWay) {
+        this.overpaymentReduceWay = overpaymentReduceWay;
+        return this;
+    }
+    public InputData witchOverpaymentProvisionPercent(BigDecimal overpaymentProvisionPercent){
+        this.overpaymentProvisionPercent = overpaymentProvisionPercent;
+        return this;
+    }
+    public InputData witchOverpaymentProvisionMonths(BigDecimal overpaymentProvisionMonths){
+        this.overpaymentProvisionMonths = overpaymentProvisionMonths;
+        return this;
+    }
 
     public InputData witchRepaymentStartDate(LocalDate repaymentStartDate){
         this.repaymentStartDate = repaymentStartDate;
@@ -64,10 +95,26 @@ public class InputData {
     }
 
     public BigDecimal getInterestPercent(){
-        return wiborPercent.add(bankMarginPercent).divide(PERCENT,10, RoundingMode.HALF_UP);
+        return wiborPercent.add(bankMarginPercent).divide(PERCENT,4, RoundingMode.HALF_UP);
     }
 
     public BigDecimal getInterestDisplay(){
         return wiborPercent.add(bankMarginPercent).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public Map<Integer, BigDecimal> getOverpaymentSchema() {
+        return overpaymentSchema;
+    }
+
+    public String getOverpaymentReduceWay() {
+        return overpaymentReduceWay;
+    }
+
+    public BigDecimal getOverpaymentProvisionPercent() {
+        return overpaymentProvisionPercent.divide(PERCENT,4, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal getOverpaymentProvisionMonths() {
+        return overpaymentProvisionMonths;
     }
 }

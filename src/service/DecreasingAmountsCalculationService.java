@@ -5,9 +5,9 @@ import model.Overpayment;
 import model.Rate;
 import model.RateAmounts;
 
-public interface AmountsCalculationService {
+public interface DecreasingAmountsCalculationService {
+
     RateAmounts calculate(InputData inputData, Overpayment overpayment);
 
     RateAmounts calculate(InputData inputData, Overpayment overpayment, Rate previousRate);
-
 }

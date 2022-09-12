@@ -5,26 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3e7018-269d-4b62-ad2a-b02aa3bf60fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model/MortgageReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Overpayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Summary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ConstantAmountsCalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ConstantAmountsCalculationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/DecreasingAmountsCalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/DecreasingAmountsCalculationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/MortgageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/OverpaymentCalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/OverpaymentCalculationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ReferenceCalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ReferenceCalculationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/SummaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/SummaryServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/InputData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/MortgageResidual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MortgageResidual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Rate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/RateAmounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RateAmounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/RateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RateType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/TimePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TimePoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/AmountsCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/AmountsCalculationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/AmountsCalculationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/AmountsCalculationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/MortgageCalculationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageCalculationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/PrintingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrintingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/PrintingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrintingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/RateCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/RateCalculationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/RatecalculationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/RatecalculationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/ResidualCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ResidualCalculationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ResidualCalculationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ResidualCalculationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/TimePointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TimePointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/TimePointServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TimePointServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +63,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="service" />
       <recent name="model" />
+      <recent name="service" />
     </key>
   </component>
   <component name="RunManager">
