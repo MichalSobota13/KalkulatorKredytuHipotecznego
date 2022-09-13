@@ -1,7 +1,4 @@
-import model.InputData;
-import model.MortgageResidual;
-import model.RateAmounts;
-import model.RateType;
+import model.*;
 import service.*;
 
 import java.math.BigDecimal;
@@ -11,7 +8,8 @@ public class Main {
         InputData inputData = new InputData()
                 .witchAmount(new BigDecimal("298000"))
                 .witchMonthsDuration(BigDecimal.valueOf(360))
-                .witchRateType(RateType.DECREASING);
+                .witchRateType(RateType.CONSTANT)
+                .witchOverpaymentReduceWay(Overpayment.REDUCE_RATE);
 
         PrintingService printingService = new PrintingServiceImpl();
         RateCalculationService rateCalculationService = new RatecalculationServiceImpl(
@@ -30,6 +28,7 @@ public class Main {
                 rateCalculationService,
                 SummaryServiceFactory.create()
         );
+
         mortgageCalculationService.calculate(inputData);
 
     }
